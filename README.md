@@ -22,7 +22,7 @@ Before you begin, ensure you have the following installed on your system:
 - Alchemy API key for the Sepolia network
 
 ## Project Structure
-    ```sh
+
     ├── grafana
     │   ├── alerts.json
     │   ├── contacts.json.tmpl
@@ -43,14 +43,13 @@ Before you begin, ensure you have the following installed on your system:
         │   └── .gitkeep
         └── truffle-config.js
     └── .gitignore
-    ```
 
 ## Getting Started
 
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/yourusername/sre-task-ethereum-monitoring-stack.git
+    git clone https://github.com/goooff/sre-task-ethereum-monitoring-stack.git
     cd sre-task-ethereum-monitoring-stack/
     ```
 
@@ -132,12 +131,12 @@ To compile and deploy the UpToken contract:
 
 5. **Access Grafana and Prometheus:**
 
-    - Grafana: [http://localhost:3000](http://localhost:3000) (default credentials: admin/admin)
+    - Grafana: [http://localhost:3000](http://localhost:3000) 
     - Prometheus: [http://localhost:9090](http://localhost:9090)
 
 6. **Verify the setup:**
 
-    - Check if the Grafana dashboard is imported and displays the metrics correctly.
+    - Check if the Grafana dashboard and alerts are imported and the metrics are displayed correctly.
     - Check Prometheus for the metrics scraped by the Ethereum address metrics exporter.
 
 ## Monitoring Configuration

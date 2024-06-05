@@ -1,0 +1,23 @@
+global:
+  logging: "debug" # panic,fatal,warm,info,debug,trace
+  metricsAddr: ":9090"
+  namespace: eth_address
+  labels:
+    extra: label
+
+execution:
+  url: "https://eth-sepolia.g.alchemy.com/v2/"
+  timeout: 10s
+  headers:
+    authorization: "Bearer ${api_key}"
+
+addresses:
+  account:
+    - name: SRE Token Treasury
+      address: 0x4Aa1b97b38caE437eBeecef5923142Dd3566C674
+      labels:
+        type: treasury
+  erc20:
+    - name: UpToken Contract
+      contract: 0xDeB562551b68AC0771184BcC1fD7c83695a5c5cc
+      address: 0x4Aa1b97b38caE437eBeecef5923142Dd3566C674

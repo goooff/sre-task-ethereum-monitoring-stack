@@ -1,0 +1,10 @@
+*.env
+*.DS_Store
+Monitoring/terraform/scraper/config.yml
+Monitoring/terraform/grafana/contacts.json
+*.terraform
+*terraform.tfstate.backup
+*.terraform.lock.hcl
+*secrets.tfvars
+*tfstate
+UpToken/build/*
